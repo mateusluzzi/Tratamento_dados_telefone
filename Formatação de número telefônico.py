@@ -69,10 +69,10 @@ if local_file:
     df = pd.read_csv(file_path)
 else:
     conn = connection.connect(
-    host,
-    database,
-    user, 
-    passwd,
+    host=host,
+    database=database,
+    user=user, 
+    password=passwd,
     use_pure=True
 )
     df = pd.read_sql(query,conn)
